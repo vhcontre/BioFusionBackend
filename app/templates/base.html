@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Inventario{% endblock %}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>📦 Sistema de Inventario</h1>
+        <nav style="margin-bottom: 1em;">
+            <a href="/web/productos">📦 Productos</a> |
+            <a href="/web/movimientos">📋 Movimientos</a> |
+            <a href="/web/movimientos/exportar-csv">⬇️ Exportar movimientos (CSV)</a>
+        </nav>
+        <hr>
+
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+
+</html>
